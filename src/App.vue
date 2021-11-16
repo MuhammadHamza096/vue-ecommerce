@@ -1,28 +1,56 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <Login/> -->
+    <!-- <Card/> -->
+<!-- 
+    <b-container class="bv-example-row">
+  <b-row>
+    <b-col> <Card/></b-col>
+    <b-col> <Card/></b-col>
+    <b-col> <Card/></b-col>
+    <b-col> <Card/></b-col>  
+  </b-row>
+</b-container> -->
+   <!-- <Drawer/> -->
+   <!-- <SingleProduct/> -->
+   <!-- <Checkout/> -->
+   <!-- <Dashboard/> -->
+   <NavBar/>
+   <!-- <ul>
+     <li><router-link to="/dashboard">Dashboard</router-link></li>
+     <li><router-link to="/signup">Signup</router-link></li>
+     <li><router-link to="/">login</router-link></li>
+   </ul> -->
+   <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import Checkout from './components/Checkout.vue'
 
+// import Login from './components/login.vue'
+// import Signup from './components/Signup.vue'
+// import Card from './components/Card.vue' 
+// import Drawer from './components/Drawer.vue'
+// import SingleProduct from './components/SingleProduct.vue'
+// import Dashboard from './components/Dashboard.vue'
+import NavBar from './components/NavBar.vue'
 export default {
   name: 'App',
+  
   components: {
-    HelloWorld
+    // Drawer
+    // SingleProduct
+    // Checkout
+    // Login
+    // Card
+    // Dashboard
+    NavBar
   }
 }
-</script>
+
+    </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
